@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFF"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="vertical"
+        android:paddingTop="20dp"
+        tools:context="com.eisaadil.sunshine.DetailActivityFragment"
+        tools:showIn="@layout/activity_detail">
+
+
+        <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/detail_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:padding="5dp"
+            android:fontFamily="sans-serif-condensed"
+            android:textSize="48sp"
+            android:layout_marginBottom="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/detail_icon"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center" />
+
+            <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/detail_max"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center"
+                android:textSize="54sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/detail_short_desc"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-condensed"
+                android:gravity="center"
+                android:textSize="20sp"
+
+                />
+
+            <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/detail_min"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center"
+                android:textSize="34sp" />
+
+        </LinearLayout>
+
+        <!-- HERE -->
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:rowCount="4"
+            android:background="#534f4f"
+            android:paddingTop="15dp"
+            android:layout_marginTop="15dp"
+            >
+
+            <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+                android:text="Humidity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:fontFamily="sans-serif-light"
+                android:layout_gravity="left"
+                android:textColor="#FFFFFF"
+                android:layout_columnWeight="1"
+                android:padding="20dp"
+                android:layout_marginLeft="20dp"/>
+            <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/detail_humidity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:fontFamily="sans-serif-light"
+                android:layout_gravity="left"
+                android:textColor="#FFFFFF"
+                android:layout_columnWeight="1"/>
+
+            <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+                android:text="Wind Speed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:fontFamily="sans-serif-light"
+                android:layout_gravity="left"
+                android:textColor="#FFFFFF"
+                android:layout_columnWeight="1"
+                android:padding="20dp"
+                android:layout_marginLeft="20dp"/>
+
+            <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/detail_wind_speed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:fontFamily="sans-serif-light"
+                android:layout_gravity="left"
+                android:textColor="#FFFFFF"
+                android:layout_columnWeight="1"/>
+
+            <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+                android:text="Pressure"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:fontFamily="sans-serif-light"
+                android:layout_gravity="left"
+                android:textColor="#FFFFFF"
+                android:layout_columnWeight="1"
+                android:padding="20dp"
+                android:layout_marginLeft="20dp"/>
+
+            <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/detail_pressure"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:fontFamily="sans-serif-light"
+                android:textColor="#FFFFFF"
+                android:layout_columnWeight="1"
+                android:layout_gravity="left"/>
+
+            <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/detail_long_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnSpan="2"
+                android:fontFamily="sans-serif-condensed"
+                android:layout_gravity="center"
+                android:textSize="35sp"
+                android:textColor="#FFF"
+                android:padding="25dp"/>
+
+        </GridLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="#534f4f"
+        />
+
+        <!-- HERE -->
+
+
+
+    </LinearLayout>
